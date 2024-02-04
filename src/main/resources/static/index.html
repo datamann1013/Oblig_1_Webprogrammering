@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kinobilletter</title>
+    <script src="js.js"></script>
 </head>
 <body>
+    <h1>Bestilling av kinobilletter!</h1>
+        <form method="post" onsubmit="ticket(); return false;">
+            <p>Velg film:
+                <select id = "filmselector" required>
+                    <option disabled selected hidden>Velg film her</option>
+                    <option>Babyen 1</option>
+                    <option>Dune 2</option>
+                    <option>Spooderman: Always home</option>
+                    <option>DC champions!</option>
+                </select>
+            </p>
+            <p>
+                Antall
+                <input type="number" id="amount" style="width: 3em" min="0" max="99" required>
+            </p>
+            <br>
+
+                 <table>
+                    <tr><td>Fornavn</td><td><input type="text" id="firstName" required></td></tr>
+                    <tr><td>Etternavn</td><td><input type="text" id="surName" required></td></tr>
+                    <tr><td>Telefonnr</td><td><input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="telephoneNR" required></td></tr>
+                    <tr><td>Epost</td><td><input type="email" id="email" name="email" required></td></tr>
+
+                </table>
+                <input type="submit">
+        </form>
+    <h2>Alle billetter :)</h2>
+        <div id="output"></div>
+        <button onclick="delTickets()">Slett alle billettene</button>
+    <script> out1();</script>
 
 </body>
 </html>
