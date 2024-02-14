@@ -7,6 +7,7 @@ function ticket(){
     let inputBoxSur = document.getElementById("surName").value;
     let inputBoxPhone = document.getElementById("telephoneNR").value;
     let inputBoxEmail = document.getElementById("email").value;
+
     if (inputBoxMovie == 'Velg film her'){
         alert('Velg en film!')
         return;
