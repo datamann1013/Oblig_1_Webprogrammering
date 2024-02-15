@@ -4,7 +4,7 @@ OsloMet brukernavn: marom4286
 
 GitHub brukernavn: datamann1013
 
-Github repo URL: https://github.com/data1700-v23/oblig-1-datamann1013/tree/master
+Github repo URL: https://github.com/datamann1013/Oblig_1_Webprogrammering
 
 Fullt navn: Martin Storødegård Rømmesmo
 
