@@ -1,6 +1,6 @@
 let ticketArray = [];
 
-function ticket(){
+function ticket(){// Get values from input
     let inputBoxMovie = document.getElementById("filmselector").value;
     let inputBoxAmount = document.getElementById("amount").value;
     let inputBoxFirst = document.getElementById("firstName").value;
@@ -8,7 +8,7 @@ function ticket(){
     let inputBoxPhone = document.getElementById("telephoneNR").value;
     let inputBoxEmail = document.getElementById("email").value;
 
-    if (inputBoxMovie == 'Velg film her'){
+    if (inputBoxMovie === 'Velg film her'){ // If input is empty
         alert('Velg en film!')
         return;
     }
@@ -23,6 +23,7 @@ function ticket(){
     }
     ticketArray.push(fullInput);
     console.log(fullInput);
+    // Clear input fields
     document.getElementById('filmselector').value = 'Velg film her';
     document.getElementById('amount').value = ' ';
     document.getElementById('firstName').value = ' ';
@@ -32,7 +33,7 @@ function ticket(){
     out1();
 }
 
-function out1(){
+function out1(){ //Output
     let ut = "<table><tr><td>Fornavn</td><td>Etternavn</td><td>Telefonnr</td>" +
         "<td>Epost</td><td>Film</td><td>Antall billetter</td></tr>";
 
@@ -44,7 +45,7 @@ function out1(){
     document.getElementById('output').innerHTML = ut;
     console.log(ut);
 }
-function delTickets(){
+function delTickets(){ // Empty array
     ticketArray = [];
     out1();
 }

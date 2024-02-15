@@ -7,9 +7,11 @@
 </head>
 <body>
     <h1>Bestilling av kinobilletter!</h1>
+    <!--Uses forms to make info gathering easy, return false stops the page from refreshing-->
         <form method="post" onsubmit="ticket(); return false;">
             <p>Velg film:
-                <select id = "filmselector" required>
+                <select id = "filmselector" required> <!--required makes it mandatory to select a film-->
+                    <!--Options are defined in the html file-->
                     <option disabled selected hidden>Velg film her</option>
                     <option>Babyen 1</option>
                     <option>Dune 2</option>
